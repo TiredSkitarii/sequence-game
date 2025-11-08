@@ -1,0 +1,26 @@
+/* General Styles */
+
+/* Shapes */
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid tranparent;
+    border-bottom: 50px solid #555;
+}
+/* shape generated using code from W3schools.com: How To - CSS Shapes */
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color:#555;
+    border-radius: 50%;
+}
+/* shape generated using code from W3schools.com: How To - CSS Shapes */
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+}
