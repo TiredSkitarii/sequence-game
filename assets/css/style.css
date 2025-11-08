@@ -1,5 +1,9 @@
 /* General Styles */
 
+h1 {
+    text-align: center;
+}
+
 /* Shapes */
 
 .shape {
