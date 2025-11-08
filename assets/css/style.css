@@ -1,7 +1,11 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
 /* General Styles */
 
 h1 {
     text-align: center;
+    font-family: "Vend Sans", sans-serif;
 }
 
 button {
