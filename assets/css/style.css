@@ -29,16 +29,15 @@
 .cross {
     height:100px;
     width: 20px;
-    position:relative;
+    position: relative;
     background-color:#555
 }
 .cross:after {
     content:"";
-    height:20px;
-    left:-40px;
+    height:100px;
+    width:20px;
     position: absolute;
-    top:40px;
-    width:100px;
+    transform: rotate(90deg);
     background-color:#555
 }
 /* shape generated using code from css-tricks.com/the-shapes-of-css, original code by Kaya Basharan */
