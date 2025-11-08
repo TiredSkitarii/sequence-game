@@ -5,22 +5,40 @@
 .triangle {
     width: 0;
     height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid #555;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #555;
 }
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
 
 .circle {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background-color:#555;
     border-radius: 50%;
 }
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
 
 .square {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     background-color: #555;
 }
+/* shape generated using code from W3schools.com: How To - CSS Shapes */
+
+.cross {
+    height:100px;
+    width: 20px;
+    position:relative;
+    background-color:#555
+}
+.cross:after {
+    content:"";
+    height:20px;
+    left:-40px;
+    position: absolute;
+    top:40px;
+    width:100px;
+    background-color:#555
+}
+/* shape generated using code from css-tricks.com/the-shapes-of-css, original code by Kaya Basharan */
