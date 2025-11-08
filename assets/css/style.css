@@ -9,8 +9,14 @@ button {
     margin-bottom: 1rem;
 }
 
+/* Spacings */
+
 #game-area {
     margin-top: 2rem;
+}
+
+#score-area {
+    margin-top: 3rem;
 }
 
 /* Shapes */
