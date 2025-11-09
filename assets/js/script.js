@@ -25,3 +25,5 @@ function addTurn() {
     // gameTurn();
     // commented out until function complete
 }
+
+// Reminder for flashShape function - will need to check id of shape as Triangle will need inactiveTri removed and readded instead of inactive
