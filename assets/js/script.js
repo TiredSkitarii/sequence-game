@@ -3,7 +3,7 @@ let game = {
     currentTurn: [],
     playerTurn: [],
     turnNumber: 0,
-    choices: ["triangle", "square", "circle", "cross"],
+    choices: ["triangle", "square", "circle", "diamond"],
 }
 
 function newGame() {

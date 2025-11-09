@@ -13,7 +13,7 @@ button {
     margin-bottom: 1rem;
 }
 
-/* Shape colours when Active: Triangle - gold, Square - blue, Circle - red, Cross - green */
+/* Shape colours when Active: Triangle - gold, Square - blue, Circle - red, Cross - forestgreen */
 
 /* Spacings */
 
@@ -62,22 +62,13 @@ button {
 }
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
 
-.cross {
-    height:100px;
-    width: 25px;
-    position: relative;
-    background-color:#555
+.diamond {
+    height: 100px;
+    width: 100px;
+    background-color: forestgreen;
+    transform: rotate(45deg);
 }
-.cross:after {
-    content:"";
-    height:100px;
-    width:25px;
-    left: 0px;
-    position: absolute;
-    transform: rotate(90deg);
-    background-color:#555
-}
-/* shape generated using code from css-tricks.com/the-shapes-of-css, original code by Kaya Basharan */
+
 
 /* Inactive classes for shapes */
 
