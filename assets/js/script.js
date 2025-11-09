@@ -11,4 +11,10 @@ function newGame() {
     game.playerTurn = [];
     game.currentTurn = [];
     game.turnNumber = 0;
+    showScore();
+    // addTurn();
+}
+
+function showScore() {
+    document.getElementById("score").innerText = game.score;
 }
