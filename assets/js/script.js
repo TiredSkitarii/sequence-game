@@ -41,5 +41,3 @@ function flashShape(shapeID) {
         }, 750);
     }
 }
-
-// Reminder for flashShape function - will need to check id of shape as Triangle will need inactiveTri removed and readded instead of inactive
