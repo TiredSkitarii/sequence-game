@@ -78,3 +78,13 @@ button {
     background-color:#555
 }
 /* shape generated using code from css-tricks.com/the-shapes-of-css, original code by Kaya Basharan */
+
+/* Inactive classes for shapes */
+
+.inactive {
+    background-color: #555;
+}
+
+.inactiveTri {
+    border-bottom: 100px solid #555;
+}
