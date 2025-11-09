@@ -38,7 +38,7 @@ function flashShape(shapeID) {
         document.getElementById(shapeID).classList.remove("inactive");
         setTimeout (() => {
             document.getElementById(shapeID).classList.add("inactive");
-        }, 500);
+        }, 750);
     }
 }
 
