@@ -63,8 +63,8 @@ button {
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
 
 .diamond {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     background-color: forestgreen;
     transform: rotate(45deg);
 }
