@@ -26,4 +26,20 @@ function addTurn() {
     // commented out until function complete
 }
 
+// function gameTurn() {}
+
+function flashShape(shapeID) {
+    if (shapeID === "triangle") {
+        document.getElementById(shapeID).classList.remove("inactiveTri");
+        setTimeout (() => {
+            document.getElementById(shapeID).classList.add("inactiveTri");
+        }, 500);
+    } else {
+        document.getElementById(shapeID).classList.remove("inactive");
+        setTimeout (() => {
+            document.getElementById(shapeID).classList.add("inactive");
+        }, 500);
+    }
+}
+
 // Reminder for flashShape function - will need to check id of shape as Triangle will need inactiveTri removed and readded instead of inactive
