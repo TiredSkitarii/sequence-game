@@ -22,7 +22,11 @@ button {
 }
 
 #score-area {
-    margin-top: 3rem;
+    margin-top: 5rem;
+}
+
+#scorebox {
+    border: 1px solid;
 }
 
 /* Shapes */
