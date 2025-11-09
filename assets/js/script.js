@@ -5,3 +5,10 @@ let game = {
     turnNumber: 0,
     choices: ["triangle", "square", "circle", "cross"],
 }
+
+function newGame() {
+    game.score = 0;
+    game.playerTurn = [];
+    game.currentTurn = [];
+    game.turnNumber = 0;
+}
