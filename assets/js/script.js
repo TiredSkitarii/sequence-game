@@ -57,13 +57,14 @@ function gameTurn() {
 function playerTurn() {
     let i = game.playerTurn.length - 1;
     if (game.currentTurn[i] === game.playerTurn[i]) {
-        if (game.currentTurn.length === game.playerTurn.length)
+        if (game.currentTurn.length === game.playerTurn.length) {
             game.score++;
         showScore();
         alert("Well done!");
         addTurn();
+        }
     } else {
-        alert ("Sorry, Wrong Move!")
+        alert ("Sorry, Wrong Move!");
         resetGame();
     }
 }
