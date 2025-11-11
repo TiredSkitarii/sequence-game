@@ -1,5 +1,5 @@
 let game = {
-    score: 0,
+    score: 12,
     currentTurn: [],
     playerTurn: [],
     turnNumber: 0,
@@ -12,6 +12,16 @@ function newGame() {
     game.playerTurn = [];
     game.currentTurn = [];
     game.turnNumber = 0;
+    for (let shape of document.getElementsByClassName("shape")) {
+        if (shape.getAttribute("data-listener") !=="true") {
+            shape.addEventListener("click", (e) => {
+                let move = e.target.getAttribute("id");
+                flashShape(move);
+                game.playerTurn.push(move);
+            });
+            shape.setAttribute("data-listener", "true");
+        }
+    }
     showScore();
     addTurn();
 }
@@ -21,7 +31,7 @@ function showScore() {
 }
 
 function addTurn() {
-    game.playerMoves = [];
+    game.playerTurn = [];
     game.currentTurn.push(game.choices[(Math.floor(Math.random() * 4))]);
     gameTurn();
 }
