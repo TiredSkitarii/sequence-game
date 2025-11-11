@@ -18,7 +18,7 @@
     </div>
     <div class="d-grid col-4 mx-auto">
         <!-- Opens Modal with how to play information -->
-        <button id="how-to-play" class="btn btn-secondary">How to Play</button>
+        <button id="how-to-play" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#how-to-play-content">How to Play</button>
     </div>
 </div>
 
@@ -40,6 +40,27 @@
     <div class="row justify-content-center">
         <p id="scorebox" class="col-2 text-center">Score: <span id="score">0</span></p>
     </div>
+</div>
+
+<!-- Modal contents for How to play button -->
+<div class="modal fade" id="how-to-play-content" tabindex="-1" aria-labelledby="how-to-play-title" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="how-to-play-title">How to Play</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>When you start the game, one of the shapes will flash a colour. Click on the shape that just flashed to proceed.</p>
+        <br>
+        <p> As you play, the sqeuence of shapes will grow longer and longer. You will score a point for each correct sequence you complte.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
