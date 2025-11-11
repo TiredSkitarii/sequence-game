@@ -5,6 +5,7 @@ let game = {
     turnNumber: 0,
     choices: ["triangle", "square", "circle", "diamond"],
     freezePlayer: false,
+    lastClick: "",
 }
 
 function newGame() {
@@ -15,10 +16,13 @@ function newGame() {
     for (let shape of document.getElementsByClassName("shape")) {
         if (shape.getAttribute("data-listener") !=="true") {
             shape.addEventListener("click", (e) => {
+                if (game.currentTurn.length > 0 && !game.freezePlayer) {
                 let move = e.target.getAttribute("id");
+                game.lastClick = move;
                 flashShape(move);
                 game.playerTurn.push(move);
                 playerTurn();
+                }
             });
             shape.setAttribute("data-listener", "true");
         }
