@@ -46,12 +46,12 @@ function gameTurn() {
     game.turnNumber = 0;
     let turns = setInterval(() => {
         flashShape(game.currentTurn[game.turnNumber]);
-        game.turnNumber++
+        game.turnNumber++;
         if (game.turnNumber >= game.currentTurn.length) {
             clearInterval(turns);
             game.freezePlayer = false;
         }
-    }, 750);
+    }, 1000);
 }
 
 function playerTurn() {
