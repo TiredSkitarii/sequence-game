@@ -23,11 +23,22 @@ function showScore() {
 function addTurn() {
     game.playerMoves = [];
     game.currentTurn.push(game.choices[(Math.floor(Math.random() * 4))]);
-    // gameTurn();
+    gameTurn();
     // commented out until function complete
 }
 
-// function gameTurn() {}
+function gameTurn() {
+    game.freezePlayer = true;
+    game.turnNumber = 0;
+    let turns = setInterval(() => {
+        flashShape(game.currentTurn[game.turnNumber]);
+        game.turnNumber++
+        if (game.turnNumber >= game.currentTurn.length) {
+            clearInterval(turns);
+            game.freezePlayer = false;
+        }
+    }, 750);
+}
 
 function flashShape(shapeID) {
     if (shapeID === "triangle") {
