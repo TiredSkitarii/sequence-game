@@ -24,7 +24,6 @@ function addTurn() {
     game.playerMoves = [];
     game.currentTurn.push(game.choices[(Math.floor(Math.random() * 4))]);
     gameTurn();
-    // commented out until function complete
 }
 
 function gameTurn() {
@@ -53,3 +52,7 @@ function flashShape(shapeID) {
         }, 750);
     }
 }
+
+// Event Listeners for buttons
+let newGameButton = document.getElementById("start-game");
+newGameButton.addEventListener("click", newGame);
