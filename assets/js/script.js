@@ -18,6 +18,7 @@ function newGame() {
                 let move = e.target.getAttribute("id");
                 flashShape(move);
                 game.playerTurn.push(move);
+                playerTurn();
             });
             shape.setAttribute("data-listener", "true");
         }
@@ -56,6 +57,9 @@ function playerTurn() {
             game.score++;
         showScore();
         addTurn();
+    } else {
+        alert ("Sorry, Wrong Move!")
+        resetGame();
     }
 }
 
@@ -70,6 +74,15 @@ function flashShape(shapeID) {
         setTimeout (() => {
             document.getElementById(shapeID).classList.add("inactive");
         }, 750);
+    }
+}
+
+// Deactivates shapes on end of game, to allow players to view their final score
+function resetGame() {
+    for (let shape of document.getElementsByClassName("shape")) {
+        if (shape.getAttribute("data-listener") !=="false") {
+            shape.setAttribute("data-listener", "false");
+        }
     }
 }
 
