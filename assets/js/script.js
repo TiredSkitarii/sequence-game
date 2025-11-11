@@ -4,6 +4,7 @@ let game = {
     playerTurn: [],
     turnNumber: 0,
     choices: ["triangle", "square", "circle", "diamond"],
+    freezePlayer: false,
 }
 
 function newGame() {
@@ -33,7 +34,7 @@ function flashShape(shapeID) {
         document.getElementById(shapeID).classList.remove("inactiveTri");
         setTimeout (() => {
             document.getElementById(shapeID).classList.add("inactiveTri");
-        }, 500);
+        }, 750);
     } else {
         document.getElementById(shapeID).classList.remove("inactive");
         setTimeout (() => {
