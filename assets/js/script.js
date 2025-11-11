@@ -1,5 +1,5 @@
 let game = {
-    score: 12,
+    score: 0,
     currentTurn: [],
     playerTurn: [],
     turnNumber: 0,
@@ -47,6 +47,16 @@ function gameTurn() {
             game.freezePlayer = false;
         }
     }, 750);
+}
+
+function playerTurn() {
+    let i = game.playerTurn.length -1;
+    if (game.currentTurn[i] === game.playerTurn[i]) {
+        if (game.currentTurn.length == game.playerTurn.length)
+            game.score++;
+        showScore();
+        addTurn();
+    }
 }
 
 function flashShape(shapeID) {
