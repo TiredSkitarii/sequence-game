@@ -1,3 +1,4 @@
+// Opject for all Game stats
 let game = {
     score: 0,
     currentTurn: [],
@@ -8,6 +9,7 @@ let game = {
     lastClick: "",
 }
 
+// Runs new game, resetting score and beggining the game sequence
 function newGame() {
     game.score = 0;
     game.playerTurn = [];
@@ -31,16 +33,19 @@ function newGame() {
     addTurn();
 }
 
+// replaces score text with game score
 function showScore() {
     document.getElementById("score").innerText = game.score;
 }
 
+// clear player sequnce and adds 1 to current sequence
 function addTurn() {
     game.playerTurn = [];
     game.currentTurn.push(game.choices[(Math.floor(Math.random() * 4))]);
     gameTurn();
 }
 
+// Displays the current sequence to the player
 function gameTurn() {
     game.freezePlayer = true;
     game.turnNumber = 0;
@@ -54,6 +59,7 @@ function gameTurn() {
     }, 1000);
 }
 
+// compares Player sequence to the game sequence and continues or ends the game accordingly
 function playerTurn() {
     let i = game.playerTurn.length - 1;
     if (game.currentTurn[i] === game.playerTurn[i]) {
@@ -69,6 +75,7 @@ function playerTurn() {
     }
 }
 
+// causes shapes to change colour when selected
 function flashShape(shapeID) {
     if (shapeID === "triangle") {
         document.getElementById(shapeID).classList.remove("inactiveTri");

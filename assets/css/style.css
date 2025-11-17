@@ -16,8 +16,6 @@ button {
     margin-bottom: 1rem;
 }
 
-/* Shape colours when Active: Triangle - gold, Square - blue, Circle - red, Cross - forestgreen */
-
 /* Spacings */
 
 #game-area {
@@ -71,6 +69,7 @@ button {
     background-color: forestgreen;
     transform: rotate(45deg);
 }
+/* shape generated using code from W3schools.com: How To - CSS Shapes */
 
 
 /* Inactive classes for shapes */
