@@ -12,7 +12,7 @@
 <h1>Sequence Game</h1>
 
 <!-- Div for containing buttons -->
-<div class="container">
+<section class="container">
     <div class="d-grid col-6 mx-auto">
         <button id="start-game" class="btn btn-success">Start Game</button>
     </div>
@@ -20,10 +20,10 @@
         <!-- Opens Modal with how to play information -->
         <button id="how-to-play" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#how-to-play-content">How to Play</button>
     </div>
-</div>
+  </section>
 
 <!-- Div for Main Game Area -->
-<div id="game-area" class="container">
+<main id="game-area" class="container">
     <div class="row gx-0 justify-content-center">
         <div data-listener="false" id="triangle" class="triangle shape inactiveTri"></div>
 
@@ -33,17 +33,17 @@
 
         <div data-listener="false" id="diamond" class="diamond shape inactive"></div>
     </div>
-</div>
+  </main>
 
 <!-- Div for Score Area -->
-<div id="score-area" class="container">
+<section id="score-area" class="container">
     <div class="row justify-content-center">
         <p id="scorebox" class="col-2 text-center">Score: <span id="score">0</span></p>
     </div>
-</div>
+</section>
 
 <!-- Modal contents for How to play button -->
-<div class="modal fade" id="how-to-play-content" tabindex="-1" aria-labelledby="how-to-play-title" aria-hidden="true">
+<section class="modal fade" id="how-to-play-content" tabindex="-1" aria-labelledby="how-to-play-title" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -62,7 +62,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <!-- SweetAlert2 script link -->
