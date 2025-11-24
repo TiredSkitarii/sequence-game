@@ -66,11 +66,11 @@ function playerTurn() {
         if (game.currentTurn.length === game.playerTurn.length) {
             game.score++;
         showScore();
-        alert("Well done!");
+        Swal.fire("Well done!");
         addTurn();
         }
     } else {
-        alert ("Sorry, Wrong Move!");
+        Swal.fire("Sorry, Wrong Move!");
         resetGame();
     }
 }
