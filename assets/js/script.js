@@ -54,15 +54,17 @@ function gameTurn() {
         game.turnNumber++;
         if (game.turnNumber >= game.currentTurn.length) {
             clearInterval(turns);
+            setTimeout(1000);
             game.freezePlayer = false;
+            Swal.fire({
+                toast: true,
+                position: top,
+                text: "Your turn",
+                showConfirmButton: false,
+                timer: 2000
+            });
         }
     }, 1000);
-    Swal.fire({
-        position: top,
-        text: "your turn",
-        showConfirmButton: false,
-        timer: 2000
-    });
 }
 
 // compares Player sequence to the game sequence and continues or ends the game accordingly
