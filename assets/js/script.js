@@ -37,6 +37,9 @@ function newGame() {
 // replaces score text with game score
 function showScore() {
     document.getElementById("score").innerText = game.score;
+    if (game.score >= 10) {
+        document.getElementById("score-total").innerText = "100";
+    }
 }
 
 // clear player sequnce and adds 1 to current sequence
