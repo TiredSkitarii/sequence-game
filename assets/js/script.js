@@ -81,8 +81,11 @@ function playerTurn() {
             text: "Sorry, Wrong Move!",
             confirmButtonText: "Restart Game",
             allowOutsideClick: false,
+        }).then((result) => {
+            if (result.isConfirmed) {
+        newGame();
+            }
         });
-        resetGame();
     }
 }
 
