@@ -81,3 +81,16 @@ button {
 .inactiveTri {
     border-bottom: 100px solid #555;
 }
+
+/* Media Queries for resizing */
+
+/* Small Devices (576px and up) */
+
+/* Medium Devices (768px and up */
+/* @media screen and (min-width: 768px) {
+    
+} */
+
+/* Large Devices (992px and up) */
+
+/* XL Devices (1200px and up) */
