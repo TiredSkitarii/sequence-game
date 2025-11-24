@@ -62,7 +62,7 @@ function gameTurn() {
             game.freezePlayer = false;
             Swal.fire({
                 toast: true,
-                position: top,
+                position: "top",
                 text: "Your turn",
                 showConfirmButton: false,
                 timer: 2000
