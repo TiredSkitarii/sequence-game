@@ -11,6 +11,7 @@ let game = {
 
 // Runs new game, resetting score and beggining the game sequence
 function newGame() {
+    document.getElementById("start-game-text").innerText = "Restart Game";
     game.score = 0;
     game.playerTurn = [];
     game.currentTurn = [];
