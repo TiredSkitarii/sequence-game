@@ -57,6 +57,12 @@ function gameTurn() {
             game.freezePlayer = false;
         }
     }, 1000);
+    Swal.fire({
+        position: top,
+        text: "your turn",
+        showConfirmButton: false,
+        timer: 2000
+    });
 }
 
 // compares Player sequence to the game sequence and continues or ends the game accordingly
