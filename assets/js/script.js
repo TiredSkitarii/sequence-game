@@ -104,15 +104,6 @@ function flashShape(shapeID) {
     }
 }
 
-// Deactivates shapes on end of game, to allow players to view their final score
-function resetGame() {
-    for (let shape of document.getElementsByClassName("shape")) {
-        if (shape.getAttribute("data-listener") !=="false") {
-            shape.setAttribute("data-listener", "false");
-        }
-    }
-}
-
 // Event Listeners for buttons
 let newGameButton = document.getElementById("start-game");
 newGameButton.addEventListener("click", newGame);
