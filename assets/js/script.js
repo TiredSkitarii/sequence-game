@@ -66,11 +66,22 @@ function playerTurn() {
         if (game.currentTurn.length === game.playerTurn.length) {
             game.score++;
         showScore();
-        Swal.fire("Well done!");
-        addTurn();
+        Swal.fire({
+            text: "Well done!",
+            confirmButtonText: "Continue",
+            allowOutsideClick: false,
+        }).then((result) => {
+            if (result.isConfirmed) {
+            addTurn();
+            }
+        });
         }
     } else {
-        Swal.fire("Sorry, Wrong Move!");
+        Swal.fire({
+            text: "Sorry, Wrong Move!",
+            confirmButtonText: "Restart Game",
+            allowOutsideClick: false,
+        });
         resetGame();
     }
 }
