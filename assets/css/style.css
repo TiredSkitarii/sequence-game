@@ -84,13 +84,23 @@ button {
 
 /* Media Queries for resizing */
 
-/* Small Devices (576px and up) */
+/* Small Devices (520px and up) */
+@media screen and (min-width:520px) {
+    .container {
+        max-width: 360px;
+    }
+}
 
-/* Medium Devices (768px and up */
-/* @media screen and (min-width: 768px) {
-    
-} */
-
-/* Large Devices (992px and up) */
+/* Medium Devices (768px and up) */
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
 
 /* XL Devices (1200px and up) */
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
