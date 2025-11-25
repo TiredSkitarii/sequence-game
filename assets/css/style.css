@@ -34,15 +34,19 @@ p {
     vertical-align: middle;
     height: 35px;
     width: 150px;
+    background-color: whitesmoke;
 }
 
 /* Spacings */
 
 #game-area {
     margin-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #d3d3d3;
 }
 
 #shape-area {
+    padding-top: 2rem;
     margin-bottom: 2rem;
 }
 
