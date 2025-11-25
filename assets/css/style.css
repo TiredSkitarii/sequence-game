@@ -39,6 +39,9 @@ h1 {
 
 #scorebox {
     border: 1px solid;
+    vertical-align: middle;
+    height: 35px;
+    width: 150px;
 }
 
 /* Shapes */
