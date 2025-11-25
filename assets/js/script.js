@@ -45,8 +45,15 @@ function showScore() {
     document.getElementById("score").innerText = game.score;
     // Increases total score is player score high enough
     if (game.score >= 10) {
+        document.getElementById("score-total").innerText = "25";
+    }  if (game.score >= 25) {
+        document.getElementById("score-total").innerText = "50";
+    }  if (game.score >= 50) {
         document.getElementById("score-total").innerText = "100";
+    }  if (game.score >= 100) {
+        document.getElementById("score-total").innerText = "\u221E";
     }
+    // Info on how to implement Unicode symbols from Javascript.Info
 }
 
 // Increments game sequence
