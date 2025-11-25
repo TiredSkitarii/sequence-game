@@ -11,7 +11,13 @@ h1 {
     padding-bottom: 20px;
 }
 
-button {
+#how-to-play {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 250px;
+}
+
+#start-game {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 250px;
