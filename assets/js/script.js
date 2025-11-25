@@ -70,11 +70,11 @@ function addTurn() {
     gameTurn();
 }
 
-// Displays the current sequence to the player
+// Displays the current sequence of shapes to the player
 function gameTurn() {
     game.freezePlayer = true;
     game.turnNumber = 0;
-    // runs through Game Array and flashes the shapes withing to Player
+    // runs through Game Sequence Array and flashes the shapes within to Player
     let turns = setInterval(() => {
         flashShape(game.gameSequence[game.turnNumber]);
         game.turnNumber++;
@@ -96,7 +96,7 @@ function gameTurn() {
     }, 1000);
 }
 
-// Checks to see if Player is correct
+// compares Player Sequence to Game Sequence to see if Player is correct
 function playerTurn() {
     let i = game.playerSequence.length - 1;
     // if player is correct, increments score and shows success message
