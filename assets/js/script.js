@@ -47,7 +47,7 @@ function showScore() {
     }
 }
 
-// Increments gane sequence
+// Increments game sequence
 function addTurn() {
     // Clears player Sequence for next round
     game.playerSequence = [];
