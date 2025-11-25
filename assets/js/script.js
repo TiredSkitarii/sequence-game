@@ -107,6 +107,7 @@ function playerTurn() {
         // Code from SweetAlert2
         Swal.fire({
             text: "Well done!",
+            confirmButtonColor: "#198754",
             confirmButtonText: "Continue",
             allowOutsideClick: false,
         }).then((result) => {
@@ -121,6 +122,7 @@ function playerTurn() {
         Swal.fire({
             title: "Sorry, Wrong Move!",
             text: `Your Score: ${game.score}`,
+            confirmButtonColor: "#198754",
             confirmButtonText: "Restart Game",
             allowOutsideClick: false,
         }).then((result) => {
