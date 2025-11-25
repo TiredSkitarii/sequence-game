@@ -108,7 +108,8 @@ function playerTurn() {
         // if incorrect, displays incorrect message and restarts game
         // Code from SweetAlert2
         Swal.fire({
-            text: "Sorry, Wrong Move!",
+            title: "Sorry, Wrong Move!",
+            text: `Your Score: ${game.score}`,
             confirmButtonText: "Restart Game",
             allowOutsideClick: false,
         }).then((result) => {
