@@ -71,6 +71,7 @@ function gameTurn() {
             setTimeout(1000);
             game.freezePlayer = false;
             // Disaplys small alert to Player to inform when their turn starts
+            // Code from SweetAlert2
             Swal.fire({
                 toast: true,
                 position: "top",
@@ -90,6 +91,7 @@ function playerTurn() {
         if (game.currentTurn.length === game.playerTurn.length) {
             game.score++;
         showScore();
+        // Code from SweetAlert2
         Swal.fire({
             text: "Well done!",
             confirmButtonText: "Continue",
@@ -102,6 +104,7 @@ function playerTurn() {
         }
     } else {
         // if incorrect, displays incorrect message and restarts game
+        // Code from SweetAlert2
         Swal.fire({
             text: "Sorry, Wrong Move!",
             confirmButtonText: "Restart Game",
