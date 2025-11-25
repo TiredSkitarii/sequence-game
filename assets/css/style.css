@@ -29,8 +29,12 @@ h1 {
     margin-top: 2rem;
 }
 
+#shape-area {
+    margin-bottom: 2rem;
+}
+
 #score-area {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 #scorebox {
