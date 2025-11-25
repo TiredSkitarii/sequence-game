@@ -1,8 +1,8 @@
 // Opject for all Game stats
 let game = {
     score: 0,
-    currentTurn: [],
-    playerTurn: [],
+    gameSequence: [],
+    playerSequence: [],
     turnNumber: 0,
     choices: ["triangle", "square", "circle", "diamond"],
     freezePlayer: false,
@@ -14,19 +14,19 @@ function newGame() {
     document.getElementById("start-game-text").innerText = "Restart Game";
     // resets game object items used to track progress through game
     game.score = 0;
-    game.playerTurn = [];
-    game.currentTurn = [];
+    game.playerSequence = [];
+    game.gameSequence = [];
     game.turnNumber = 0;
     // activates Data Listeners on shapes to enable interaction
     for (let shape of document.getElementsByClassName("shape")) {
         if (shape.getAttribute("data-listener") !=="true") {
             shape.addEventListener("click", (e) => {
                 // records player input on shape and pushes to Player array
-                if (game.currentTurn.length > 0 && !game.freezePlayer) {
+                if (game.gameSequence.length > 0 && !game.freezePlayer) {
                 let move = e.target.getAttribute("id");
                 game.lastClick = move;
                 flashShape(move);
-                game.playerTurn.push(move);
+                game.playerSequence.push(move);
                 playerTurn();
                 }
             });
@@ -50,10 +50,10 @@ function showScore() {
 // Increments gane sequence
 function addTurn() {
     // Clears player Sequence for next round
-    game.playerTurn = [];
+    game.playerSequence = [];
     // Randomly generates number between 0-3
     // Pushes id of shape correspoding to number to game Arrray
-    game.currentTurn.push(game.choices[(Math.floor(Math.random() * 4))]);
+    game.gameSequence.push(game.choices[(Math.floor(Math.random() * 4))]);
     gameTurn();
 }
 
@@ -63,10 +63,10 @@ function gameTurn() {
     game.turnNumber = 0;
     // runs through Game Array and flashes the shapes withing to Player
     let turns = setInterval(() => {
-        flashShape(game.currentTurn[game.turnNumber]);
+        flashShape(game.gameSequence[game.turnNumber]);
         game.turnNumber++;
         // Checks if sequence has finished, and if it has, enables Player Turn
-        if (game.turnNumber >= game.currentTurn.length) {
+        if (game.turnNumber >= game.gameSequence.length) {
             clearInterval(turns);
             setTimeout(1000);
             game.freezePlayer = false;
@@ -85,10 +85,10 @@ function gameTurn() {
 
 // Checks to see if Player is correct
 function playerTurn() {
-    let i = game.playerTurn.length - 1;
+    let i = game.playerSequence.length - 1;
     // if player is correct, increments score and shows success message
-    if (game.currentTurn[i] === game.playerTurn[i]) {
-        if (game.currentTurn.length === game.playerTurn.length) {
+    if (game.gameSequence[i] === game.playerSequence[i]) {
+        if (game.gameSequence.length === game.playerSequence.length) {
             game.score++;
         showScore();
         // Code from SweetAlert2
