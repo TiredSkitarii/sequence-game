@@ -1,4 +1,6 @@
-// Opject for all Game stats
+/* jshint esversion: 6 */
+
+// Object for all Game stats
 let game = {
     score: 0,
     gameSequence: [],
@@ -7,7 +9,7 @@ let game = {
     choices: ["triangle", "square", "circle", "diamond"],
     freezePlayer: false,
     lastClick: "",
-}
+};
 
 // Runs new game, resetting score and beggining the game sequence
 function newGame() {
