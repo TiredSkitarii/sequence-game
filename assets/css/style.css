@@ -23,6 +23,13 @@ h1 {
     width: 250px;
 }
 
+#scorebox {
+    border: 1px solid;
+    vertical-align: middle;
+    height: 35px;
+    width: 150px;
+}
+
 /* Spacings */
 
 #game-area {
@@ -35,13 +42,6 @@ h1 {
 
 #score-area {
     margin-top: 2rem;
-}
-
-#scorebox {
-    border: 1px solid;
-    vertical-align: middle;
-    height: 35px;
-    width: 150px;
 }
 
 /* Shapes */
