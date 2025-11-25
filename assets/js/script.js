@@ -3,15 +3,19 @@
 // Object for all Game stats
 let game = {
     score: 0,
+    // Array storing the sequence of shapes
     gameSequence: [],
+    // Array storing the sequence of shapes the Player has selected
     playerSequence: [],
     turnNumber: 0,
     choices: ["triangle", "square", "circle", "diamond"],
+    // Boolean controling if player input is enables or not
     freezePlayer: false,
+    // Stores last shape selected by player for comparison
     lastClick: "",
 };
 
-// Runs new game, resetting score and beggining the game sequence
+// Runs new game, resetting score and begining the game sequence
 function newGame() {
     document.getElementById("start-game-text").innerText = "Restart Game";
     // resets game object items used to track progress through game
@@ -61,7 +65,7 @@ function addTurn() {
     // Clears player Sequence for next round
     game.playerSequence = [];
     // Randomly generates number between 0-3
-    // Pushes id of shape correspoding to number to game Arrray
+    // Pushes id of shape correspoding to number to game Array
     game.gameSequence.push(game.choices[(Math.floor(Math.random() * 4))]);
     gameTurn();
 }
@@ -142,6 +146,6 @@ function flashShape(shapeID) {
     }
 }
 
-// Event Listeners for buttons
+// Event Listener for New Game button
 let newGameButton = document.getElementById("start-game");
 newGameButton.addEventListener("click", newGame);
