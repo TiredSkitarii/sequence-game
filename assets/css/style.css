@@ -6,132 +6,131 @@
 */
 
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap");
 
 /* General Styles */
 
 header {
-    text-align: center;
-    font-family: "Vend Sans", sans-serif;
-    font-size: 3rem;
-    background-color: lightgrey;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  font-family: "Vend Sans", sans-serif;
+  font-size: 3rem;
+  background-color: lightgrey;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 p {
-    font-family: "montserrat", sans-serif;
-    font-size: 1rem;
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
 }
 
 #how-to-play {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 250px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 250px;
 }
 
 #start-game {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 250px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 250px;
 }
 
 #scorebox {
-    border: 1px solid;
-    vertical-align: middle;
-    height: 35px;
-    width: 150px;
-    background-color: whitesmoke;
+  border: 1px solid;
+  vertical-align: middle;
+  height: 35px;
+  width: 150px;
+  background-color: whitesmoke;
 }
 
 /* Spacings */
 
 #game-area {
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: #d3d3d3;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #d3d3d3;
 }
 
 #shape-area {
-    padding-top: 2rem;
-    margin-bottom: 2rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #score-area {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /* Shapes */
 
 .shape {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .triangle {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid gold;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid gold;
 }
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
 
 .circle {
-    height: 100px;
-    width: 100px;
-    background-color:red;
-    border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  border-radius: 50%;
 }
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
 
 .square {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
 }
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
 
 .diamond {
-    height: 75px;
-    width: 75px;
-    background-color: forestgreen;
-    transform: rotate(45deg);
+  height: 75px;
+  width: 75px;
+  background-color: forestgreen;
+  transform: rotate(45deg);
 }
 /* shape generated using code from W3schools.com: How To - CSS Shapes */
-
 
 /* Inactive classes for shapes */
 
 .inactive {
-    background-color: #555;
+  background-color: #555;
 }
 
 .inactiveTri {
-    border-bottom: 100px solid #555;
+  border-bottom: 100px solid #555;
 }
 
 /* Media Queries for resizing */
 
 /* Small Devices (520px and up) */
-@media screen and (min-width:520px) {
-    .container {
-        max-width: 360px;
-    }
+@media screen and (min-width: 520px) {
+  .container {
+    max-width: 360px;
+  }
 }
 
 /* Medium Devices (768px and up) */
-@media screen and (min-width:768px) {
-    .container {
-        max-width: 720px;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
 
 /* XL Devices (1200px and up) */
-@media screen and (min-width:1200px) {
-    .container {
-        max-width: 1140px;
-    }
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }

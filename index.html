@@ -1,88 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link to Bootstrap (v5.3.8) styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Title -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Title -->
     <title>Sequence Game</title>
-  <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-</head>
-<body>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Sequence Game</h1>
+    </header>
 
-<header>
-  <h1>Sequence Game</h1>
-</header>
-
-<!-- Div for containing buttons -->
- <section class="container">
-    <div class="row justify-content-center">
+    <!-- Div for containing buttons -->
+    <section class="container">
+      <div class="row justify-content-center">
         <!-- Opens Modal with how to play information -->
-      <button id="how-to-play" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#how-to-play-content">How to Play</button>
-    </div>
-  </section>
-
-<!-- Main Game Area -->
-<main id="game-area" class="container">
-  
-  <!-- Section for Shapes -->
-  <section id="shape-area" class="row gx-0 justify-content-center">
-    <div data-listener="false" id="triangle" class="triangle shape inactiveTri"></div>
-
-    <div data-listener="false" id="square" class="square shape inactive"></div>
-
-    <div data-listener="false" id="circle" class="circle shape inactive"></div>
-
-    <div data-listener="false" id="diamond" class="diamond shape inactive"></div>
-  </section>
-
-  <!-- Start Game/restart Button -->
-   <section id="start-area" class="row justify-content-center">
-    <div class="text-center">
-      <button id="start-game" class="btn btn-success"><span id="start-game-text">Start Game</span></button>
-    </div>
-  </section>
-
-    <!-- Div for Score Area -->
-<section id="score-area" class="container">
-    <div class="row justify-content-center">
-        <p id="scorebox" class="col-2 text-center">Score: <span id="score">0</span>/<span id="score-total">10</span></p>
-    </div>
-</section>
-
-</main>
-
-<!-- Modal contents for How to play button -->
-<section class="modal fade" id="how-to-play-content" tabindex="-1" aria-labelledby="how-to-play-title" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title fs-5" id="how-to-play-title">How to Play</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button
+          id="how-to-play"
+          class="btn btn-secondary"
+          data-bs-toggle="modal"
+          data-bs-target="#how-to-play-content"
+        >
+          How to Play
+        </button>
       </div>
-      <div class="modal-body">
-        <p>When you start the game, one of the shapes will flash a colour. Click on the shape that just flashed to proceed.</p>
-        <p>As you play, the sequence of shapes will grow longer and longer. You will score a point for each correct sequence you complete.</p>
-        <p>There is no end point to the game, so see how high you can score!</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Bootstrap (v5.3.8) script link -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<!-- SweetAlert2 script link -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.all.min.js"></script>
-<!-- link for script.js page -->
-<script src="assets/js/script.js"></script>
+    <!-- Main Game Area -->
+    <main id="game-area" class="container">
+      <!-- Section for Shapes -->
+      <section id="shape-area" class="row gx-0 justify-content-center">
+        <div
+          data-listener="false"
+          id="triangle"
+          class="triangle shape inactiveTri"
+        ></div>
 
-</body>
+        <div
+          data-listener="false"
+          id="square"
+          class="square shape inactive"
+        ></div>
+
+        <div
+          data-listener="false"
+          id="circle"
+          class="circle shape inactive"
+        ></div>
+
+        <div
+          data-listener="false"
+          id="diamond"
+          class="diamond shape inactive"
+        ></div>
+      </section>
+
+      <!-- Start Game/restart Button -->
+      <section id="start-area" class="row justify-content-center">
+        <div class="text-center">
+          <button id="start-game" class="btn btn-success">
+            <span id="start-game-text">Start Game</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Div for Score Area -->
+      <section id="score-area" class="container">
+        <div class="row justify-content-center">
+          <p id="scorebox" class="col-2 text-center">
+            Score: <span id="score">0</span>/<span id="score-total">10</span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal contents for How to play button -->
+    <section
+      class="modal fade"
+      id="how-to-play-content"
+      tabindex="-1"
+      aria-labelledby="how-to-play-title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="how-to-play-title">How to Play</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              When you start the game, one of the shapes will flash a colour.
+              Click on the shape that just flashed to proceed.
+            </p>
+            <p>
+              As you play, the sequence of shapes will grow longer and longer.
+              You will score a point for each correct sequence you complete.
+            </p>
+            <p>
+              There is no end point to the game, so see how high you can score!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap (v5.3.8) script link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SweetAlert2 script link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.all.min.js"></script>
+    <!-- link for script.js page -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
