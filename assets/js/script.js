@@ -9,7 +9,7 @@ let game = {
   playerSequence: [],
   turnNumber: 0,
   choices: ["triangle", "square", "circle", "diamond"],
-  // Boolean controling if player input is enables or not
+  // Boolean controling if player input is enabled or not
   freezePlayer: false,
   // Stores last shape selected by player for comparison
   lastClick: "",
