@@ -115,11 +115,17 @@ The Game was tested on the following criteria to assess it's functionality:
 | Responsive screen | Layout of Page changes at pre-determined breakpoints | Layout Changes at certain breakpoints | PASS |
 
 All HTML Code was validated using the online W3C HTML Validator.
+<img width="1799" height="577" alt="Screenshot 2026-05-04 204802" src="https://github.com/user-attachments/assets/b734a75a-30a6-4760-af6b-e23bdddec9b2" />
+The Warnings raised by the validator relate to the HTML used to generate the Shapes used in the game - therefore header sections within the section are uncessesary in this instance, as there is no text to display.
 All CSS Code was validated using the online W3C CSS Validator.
+<img width="1873" height="668" alt="Screenshot 2026-05-04 203534" src="https://github.com/user-attachments/assets/99d29bf1-b207-4702-adf8-c3708446cc47" />
 All Javascript Code was validated using JSHint, and online Code Quality tool for Javascript.
+<img width="1045" height="495" alt="Screenshot 2026-05-04 203719" src="https://github.com/user-attachments/assets/d47d22b0-1487-4fe7-b641-9816823ad729" />
 
 Furthermore, all Javascript Code and Functions were Manually Tested as they were written, with it being confirmed that a piece of code was working properly, before moving on to work on the next piece of code. While this slowed down the wiriting of the code, it did ensure that all functions and code were working correcty through out the process, and made the identification of any errors causes by poor code interactions and typoes were found and fixed as part of the initial writing of the code. This removed the need for a lengthy post-writing testing process, but just to be safe, I ran the code through a Quality Checker Tool and ensured all the code intereactions were working across multiple browsers just to be on the safe side.
 This was largely possible due to the relativelty small size of the project - for a much larger project with much more code, setting up automated testing along side the manual "test as you go" approach would be the preferred option.
+In those circumstances, in addition to the manual testing which involved running and playing the game across multiple browsers (Chrome, Edge, FireFox and Safari) and on different devices (Desktop, Laptop, Tablet and Phone), we would set up some test environments using JEST, and run the individual Javascript sections to ensure that each worked, using the principle of creating tests that the code would fail, then adjusting the code until it meets the minimum requirment to pass the test. The test is then amended to add a new feature, then is would repeated until evebntually, the code now performs all the functions it was intended.
+Somewhat Ironically, this process was essentially followed with manual testing during the writing of the code, with the code being written step by step, and it being manually tested to see if it worked at each step.
 
 A Lighthouse test for the page was also run, with it scoring 97 on Mobile and 100 on Desktop - due to the lack of images and complex visuals, a high score was expected on this metric.
 
