@@ -165,7 +165,9 @@ As mentioned earlier, there aren't really any User stories that can be applied a
 1. The Game Should be Simple to Play
 The process of playing the game is kept simple by limiting the gameplay loop to displaying a sequence of shapes, then having the player repeat that sequence back. This keeps Gameplay simple for the player, while acheiving the goal of challenging the Player's memory through extending the sequence.
 
-2. The Game should not take too long to Play
+<img width="1392" height="726" alt="image" src="https://github.com/user-attachments/assets/2c3614d1-f6e1-474b-bf07-3a6ccd215e35" />
+
+3. The Game should not take too long to Play
 While as an open-ended game, it is theoretically possible to play for hours on end, during testing of the games function it was observed that the average number of rounds the test players were able to make it to was about 10, which only took a few minutes to reach. Based on this (admittedly Narrow) sample selection, It should only take the average player about five minutes at most to complete the game, which is within the required parameters for keeping the game quick to play.
 
 ## Deployment
