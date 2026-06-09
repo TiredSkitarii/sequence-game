@@ -92,6 +92,10 @@ This Project was made using HTML, CSS and Javascript
 
 ## Testing
 
+The process of Testing is an important part of the development of any web application - it ensures that the application functions correctly and that any bugs that might arise during the process of development are resolves during the development process, and do not impact the function of the app.
+Testing can take the form of either automated or manual tests, automated tests being code written to test lines or blocks of code in a controlled environment, while Manual tests involved checking the code works directly by seeing if the feature works as intended - I.E clicking on a button on the app results in the action that is supposed to happen, happening. Testing can also play an important role in creating the code itself - by adoping a test-centric apporach to development, code is written to pass incrementing tests that gradually build up to the full functionality of the app.
+Ideally, a mix of both automated and manual testing will be employed, and testing will take place during the development process, as opposed to as a separate stage afterwards (though this may not always be possible in larger development environments with multiple developers working on it). Fortunately, the small scale of this project meant that testing could take place as the code was written, with each step being extensively manually tested before moving on to the next one. This approached, essentually a manuial test-centric approach, ensured that the core functionality of the app worked and that all further changes and additions to the code did not impact that functionality - it also had the side affect of rendering any automated testing unnessacry, as the code was essentially tested as it was written, meaning automatic tests would provide no additional value - the code already being confirmed to work.
+
 ### Functionality
 
 The Game was tested on the following criteria to assess it's functionality:
